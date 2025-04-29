@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "Refresh GCP Console",
   "version": "1.0",
-  "description": "Refresh GCP Console page on Alt+R",
-  "permissions": ["activeTab"],
+  "description": "Refresh GCP Console page with customizable keyboard shortcuts",
+  "permissions": ["activeTab", "storage"],
   "content_scripts": [
     {
       "matches": ["https://console.cloud.google.com/*"],
@@ -20,5 +20,9 @@
       "128": "images/icon128.png",
       "256": "images/icon256.png"
     }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
   }
 }
