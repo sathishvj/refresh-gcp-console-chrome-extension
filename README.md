@@ -1,8 +1,19 @@
 # Refresh GCP Console
 
-A Chrome extension that captures keyboard shortcuts on Google Cloud Console pages and triggers the refresh button with a visual effect.
+A Chrome extension that captures keyboard shortcuts on Google Cloud Console pages and triggers the refresh button.
 
-## Installation
+## Overview
+
+There are a few inefficiencies when using the Google Cloud Console to refresh data:
+
+- The refresh button is not always in the same location on different pages
+- The refresh is not visually the same
+- The location of the refresh button is not always consistent
+- Using the mouse, locating the refresh button, and clicking refresh feels just that little bit distracting and inefficient.
+
+This extension helps by automatically clicking the refresh button when you press a specific keyboard shortcut.
+
+## Developer Installation
 
 1. Open Chrome and navigate to `chrome://extensions/`
 2. Enable "Developer mode" by toggling the switch in the top right corner
@@ -12,26 +23,35 @@ A Chrome extension that captures keyboard shortcuts on Google Cloud Console page
 ## Usage
 
 When browsing the Google Cloud Console:
+
 1. Press your configured keyboard shortcut (default is Alt+R)
-2. The extension will locate the refresh button on the page
-3. A blue ripple animation will appear on the button
-4. After 0.5 seconds, the refresh button will be automatically clicked
+2. The extension will locate and click the refresh button on the page
 
 ## Options
 
-You can customize the keyboard shortcut by:
+You can customize the keyboard shortcut by either:
+
+Method 1:
+
+- Clicking the extension icon in your toolbar (opens options page directly)
+
+Method 2:
+
 1. Right-clicking the extension icon in your toolbar
 2. Selecting "Options"
-3. Choosing your preferred key combination:
-   - Ctrl+R
-   - Alt+R (default)
-   - Alt+Shift+R
-   - Ctrl+Shift+R
-   - Ctrl+Alt+R
+
+Then choose your preferred key combination:
+
+- Alt+R (default)
+- Ctrl+R
+- Alt+Shift+R
+- Ctrl+Shift+R
+- Ctrl+Alt+R
 
 ## Supported Page Elements
 
 The extension looks for refresh buttons with these selectors:
+
 - `.cm-icon-refresh`
 - `cfc-refresh-button`
-- `.run-query-button` (on logs pages)
+- `.run-query-button` (in Logging)
