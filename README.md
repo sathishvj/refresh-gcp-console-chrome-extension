@@ -1,17 +1,21 @@
 # Refresh GCP Console
 
-A Chrome extension that captures keyboard shortcuts on Google Cloud Console pages and triggers the refresh button.
+A Chrome extension that captures a configured key press (alt+r, by default) on Google Cloud Console pages and triggers the page-specific data refresh button.
 
 ## Overview
 
 There are a few inefficiencies when using the Google Cloud Console to refresh data:
 
 - The refresh button is not always in the same location on different pages
-- The refresh is not visually the same
-- The location of the refresh button is not always consistent
+- The refresh button is not visually the same - sometimes an icon, sometimes with text, and in other places "Run Query", etc.
 - Using the mouse, locating the refresh button, and clicking refresh feels just that little bit distracting and inefficient.
+- Refreshing the entire page is not always the best option, as it takes longer.
 
-This extension helps by automatically clicking the refresh button when you press a specific keyboard shortcut.
+This extension helps by identifying the refresh button and automatically clicking it when you press a specific keyboard shortcut.
+
+## Installation
+
+Install the extension from: [Chrome Web Store](to be added)
 
 ## Developer Installation
 
