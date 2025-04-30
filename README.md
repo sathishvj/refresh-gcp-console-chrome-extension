@@ -15,7 +15,7 @@ This extension helps by identifying the refresh button and automatically clickin
 
 ## Installation
 
-Install the extension from: [Chrome Web Store](to be added)
+Install the extension from: [Chrome Web Store](https://chromewebstore.google.com/detail/refresh-gcp-console/jpladpnibahabgjfgdfapmifjeghhlhh)
 
 ## Developer Installation
 
