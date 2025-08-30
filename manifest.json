@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Refresh GCP Console",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Refresh GCP Console page with customizable keyboard shortcuts",
   "permissions": ["activeTab", "storage"],
   "content_scripts": [

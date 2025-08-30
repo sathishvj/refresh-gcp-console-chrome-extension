@@ -79,10 +79,15 @@ function getRefreshButton() {
   if (!refreshButton) {
     refreshButton = document.querySelector("cfc-refresh-button");
   }
+  if (!refreshButton) {
+    refreshButton = document.querySelector(
+      "#resource-manager-action-bar-refresh-button",
+    );
+  }
   if (
     !refreshButton &&
     window.location.href.startsWith(
-      "https://console.cloud.google.com/logs/query"
+      "https://console.cloud.google.com/logs/query",
     )
   ) {
     refreshButton = document.querySelector(".run-query-button");
@@ -99,7 +104,7 @@ function performRefresh() {
   if (!refreshButton) {
     console.warn(
       "GCP Refresh Console: No refresh button found. Current URL: " +
-        window.location.href
+        window.location.href,
     );
     return;
   }
@@ -132,7 +137,7 @@ function performRefresh() {
     rippleContainer.remove();
     console.log(
       "GCP Refresh Console: Refresh button clicked. Current URL: " +
-        window.location.href
+        window.location.href,
     );
   }, 500);
 }
